@@ -1,8 +1,7 @@
-import './style.css'
+import "./style.css";
 
 
-document.querySelector('#app').innerHTML = `
-  <div>
-  </div>
-`
+import Footer from "./src/components/Footer/Footer";
+
+document.querySelector("Footer").innerHTML = Footer();
 
