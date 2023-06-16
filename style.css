@@ -24,6 +24,7 @@
 li {
     list-style-type: none;
     background-color: var(--color-background);
+    cursor: pointer;
 
 }
 h1 {
