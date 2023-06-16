@@ -23,11 +23,16 @@
 
 li {
     list-style-type: none;
-    background-color: var(--color-background);
     cursor: pointer;
-
 }
+
+
+a {
+    color: inherit;
+}
+
 h1 {
     color:var(--color-primary);
     font-family: var(--font-family-montserrat);
 }
+
