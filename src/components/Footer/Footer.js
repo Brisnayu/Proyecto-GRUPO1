@@ -15,21 +15,23 @@ const Footer = () => {
     
   </article>
 
+  <div class="container-footer">
+
   <article class="info-footer">
     <ul>Links</ul>
     <a href="#"><li>Flights</li></a>
-    <a href="#"></a><li>Stays</li></a>
-    <a href="#"></a><li>Discover</li></a>
-    <a href="#"></a><li>About Us</li></a>
-    <a href="#"></a><li>Contact</li></a>
+    <a href="#"><li>Stays</li></a>
+    <a href="#"><li>Discover</li></a>
+    <a href="#"><li>About Us</li></a>
+    <a href="#"><li>Contact</li></a>
   </article>
 
   <article class="info-footer">
     <ul>Our Activities</ul>
-    <a href="#"></a><li>Tour</li></a>
-    <a href="#"></a><li>Kayaking</li></a>
-    <a href="#"></a><li>Cruising</li></a>
-    <a href="#"></a><li>Multi-activities</li></a>
+    <a href="#"><li>Tour</li></a>
+    <a href="#"><li>Kayaking</li></a>
+    <a href="#"><li>Cruising</li></a>
+    <a href="#"><li>Multi-activities</li></a>
   </article>
 
   <article class="info-footer">
@@ -46,7 +48,8 @@ const Footer = () => {
     <li>Email: phnes.travels@gmail.com</li>
     <li>Maps: Millennium City, Accra</li>
   </article>
-    
+   
+  </div>
     `;
 };
 
