@@ -2,15 +2,18 @@ import { cities } from '../../data/cities';
 import { LoginNav } from '../Navbars/LoginNav';
 import { PagesNav } from '../Navbars/PagesNav';
 import { Title } from '../Title/Title';
+import './Header.css'
 
 export const Header = () => {
     return `
 <div class="img-container">
-
+<div class="img"></div>
+<div class="logoandnavbar-container">
+<img src="../public/assets/icon-footer/Phnes-Travels.png" alt="Logo" class="logo">
 <div class="navigation-container">
-<img src="" alt="" class="logo">
 ${PagesNav}
 ${LoginNav}
+</div>
 </div>
 ${Title}
 <div class="inputs-button-container">

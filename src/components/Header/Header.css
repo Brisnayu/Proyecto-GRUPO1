@@ -1,0 +1,99 @@
+.img-container {
+  position: absolute;
+  width: 1452px;
+  height: 737px;
+  left: 30px;
+  top: 30px;
+  border-radius: 30px;
+}
+
+.img {
+  position: absolute;
+  width: 1452px;
+  height: 737px;
+  left: 0px;
+  top: 0px;
+  border-radius: 30px;
+  object-fit: cover;
+  background: linear-gradient(
+      180deg,
+      rgba(5, 23, 33, 0.75) 0%,
+      rgba(5, 23, 33, 0.2) 100%
+    ),
+    url("../../assets/img/image62.png");
+}
+
+.logoandnavbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 260px;
+  position: absolute;
+  height: 57.78px;
+  left: 80px;
+  right: 80px;
+  top: 20px;
+}
+
+.logo {
+  width: 180px;
+  height: 57.78px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 150px;
+  width: 880px;
+  height: 48px;
+}
+
+.pages-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 46px;
+  width: 542px;
+  height: 19px;
+}
+
+.login-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  width: 188px;
+  height: 48px;
+}
+
+header ul li {
+    background-color: transparent;
+}
+
+header ul li:hover {
+    transition: all 0.8s;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+}
+
+header ul li a {color: white;
+}
