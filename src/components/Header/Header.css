@@ -1,26 +1,19 @@
 .img-container {
-  position: absolute;
-  width: 1452px;
-  height: 737px;
-  left: 30px;
-  top: 30px;
+  width: 100%;
   border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
 }
 
 .img {
-  position: absolute;
-  width: 1452px;
-  height: 737px;
-  left: 0px;
-  top: 0px;
+  width: 98%;
+  height: 670px;
   border-radius: 30px;
-  object-fit: cover;
-  background: linear-gradient(
-      180deg,
-      rgba(5, 23, 33, 0.75) 0%,
-      rgba(5, 23, 33, 0.2) 100%
-    ),
-    url("../../assets/img/image62.png");
+  background: url("../../assets/img/image62.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .logoandnavbar-container {
@@ -30,11 +23,12 @@
   align-items: center;
   padding: 0px;
   gap: 260px;
-  position: absolute;
   height: 57.78px;
   left: 80px;
   right: 80px;
-  top: 20px;
+  top: 40px;
+  position: absolute;
+
 }
 
 .logo {
@@ -63,7 +57,7 @@
   align-items: center;
   padding: 0px;
   gap: 46px;
-  width: 542px;
+  width: 560px;
   height: 19px;
 }
 
@@ -97,3 +91,70 @@ header ul li:hover {
 
 header ul li a {color: white;
 }
+
+
+.text-container {
+  position: absolute;
+  color: white;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  font-size: 20px;
+  text-align: center;
+  width: 48%;
+}
+
+.text-container p {
+  font-family: var(--font-family-karla);
+
+
+}
+
+.inputs-button-container {
+  position: absolute;
+  top: 70%;
+  width: 45%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.inputs-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  gap: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 100%;
+  height: 40%;
+  padding-left: 20px;
+
+}
+
+.inputs-container figure {
+  display: flex;
+  width: 15% ;
+}
+
+.inputs-container select {
+  padding: 0 10px;
+  border: none;
+  border-right: 1px solid black;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+

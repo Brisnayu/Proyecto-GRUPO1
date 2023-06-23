@@ -1,3 +1,4 @@
+import './PagesNav.css'
 export const PagesNav = `
 
 <nav class="pages-nav">

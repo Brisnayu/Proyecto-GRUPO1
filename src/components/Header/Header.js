@@ -19,9 +19,8 @@ ${Title}
 <div class="inputs-button-container">
 <div class="inputs-container">
 <figure>
-<img src="" alt="">
+<img src="./src/assets/Icons/Subtract.svg" alt="">
 
-<p>From</p>
 <select id="from-select" >
 
 ${cities.map((city) => (
@@ -37,8 +36,7 @@ ${city}
 
 
 <figure>
-<img src="" alt="">
-<p>To</p>
+<img src="./src/assets/Icons/Vector.svg" alt="">
 <select id="to-select" >
 ${cities.map((city) => (
     `<option value=${city}>
@@ -50,9 +48,7 @@ ${cities.map((city) => (
 
 <figure>
 <img src="" alt="">
-<p>Date</p>
 <input type="date" id="input-date" >
-<option value=""></option>
 </input>
 </figure>
 

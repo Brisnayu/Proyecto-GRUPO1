@@ -1,3 +1,4 @@
+import './LoginNav.css'
 export const LoginNav = `
 
 <nav class="login-nav">
