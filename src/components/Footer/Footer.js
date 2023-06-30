@@ -4,13 +4,13 @@ const Footer = () => {
   return `
     <article class="logo">
         <section>
-            <img src="./public/assets/icon-footer/Phnes-Travels.png" alt="icon logo" />
+            <img src="/src/assets/icon-footer/Phnes-Travels.png" alt="icon logo" />
         </section>
         <section>
-        <a href="#"><img src="./public/assets/icon-footer/icon_facebook.png" alt="logo facebook" /> </a>
-        <a href="#"><img src="./public/assets/icon-footer/icon_twitter.png" alt="logo twitter"  /> </a>
-        <a href="#"><img src="./public/assets/icon-footer/icon_youtube.png" alt="logo youtube"  /> </a>
-        <a href="#"><img src="./public/assets/icon-footer/icon_instagram.png" alt="logo instagram"  /> </a>
+        <a href="#"><img src="/src/assets/icon-footer/icon_facebook.png" alt="logo facebook" /> </a>
+        <a href="#"><img src="/src/assets/icon-footer/icon_twitter.png" alt="logo twitter"  /> </a>
+        <a href="#"><img src="/src/assets/icon-footer/icon_youtube.png" alt="logo youtube"  /> </a>
+        <a href="#"><img src="/src/assets/icon-footer/icon_instagram.png" alt="logo instagram"  /> </a>
         </section>
     
   </article>
