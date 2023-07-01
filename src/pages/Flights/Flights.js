@@ -4,6 +4,6 @@ export const Flights = () => {
     const main = document.querySelector("main");
 
     main.innerHTML = `
-        <h1>✅</h1>
+        <h1>Estoy en la página de flights</h1>
     `
 };
