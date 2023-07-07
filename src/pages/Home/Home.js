@@ -7,10 +7,15 @@ export const Home = () => {
 
     main.innerHTML = `
         ${PlanTrip()}
-        <div>
-            <h4>PlanTrip</h4>
+        <div class="discover">
             <h2>Discover your love</h2>
+
+        <div class="love-container">
             ${Citycard("./src/assets/img/santorini.png", "Santorini", "Greece")}
+            ${Citycard("./src/assets/img/phuket.png", "Paris", "Francia")}
+            ${Citycard("./src/assets/img/phuket.png", "Phuket", "Thailand")}
+            </div>
         </div>
     `
 };
+

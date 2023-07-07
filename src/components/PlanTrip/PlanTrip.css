@@ -1,7 +1,8 @@
 .plantrip-container {
     width: 100%;
+    margin: 1rem;
+    padding: 1rem;
     display: grid;
-    border: 2px solid var(--color-primary);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
@@ -18,13 +19,45 @@
 }
 
 .plantrip-info {
+    display: grid;
+    font-family: var(--font-family-montserrat);
     margin: 2rem;
-    max-width: 60%;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr;
+    padding-left: 1.5rem;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-area: plantripinfo;
 }
 
-.plantrip-statistics {
+.plantrip-main {
+    margin: 5px;
+}
+
+.plantrip-main > h2 {
+   font-size: 1.5rem;
+   color:var(--color-text);
+}
+
+.plantrip-main > p {
     display: flex;
+    color:var(--color-text);
+    text-align: justify;
+    margin-top: 1rem;
+    font-family: var(--font-family-karla);
+}
+
+.plantrip-statistics > div > p {
+    font-family:var(--font-family-karla);
+}
+
+.plantrip-statistics > div > h3 {
+    font-size: 1.5rem;
+    font-family: var(--font-family-montserrat);
+    color: var(--color-primary);
+}
+
+.plantrip-statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
