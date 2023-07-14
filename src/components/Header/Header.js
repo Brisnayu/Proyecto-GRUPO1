@@ -1,4 +1,5 @@
 import { cities } from '../../data/cities';
+import { ButtonGreen } from '../ButtonGreen/buttonGreen';
 import { LoginNav } from '../Navbars/LoginNav';
 import { PagesNav } from '../Navbars/PagesNav';
 import { Title } from '../Title/Title';
@@ -52,10 +53,20 @@ ${cities.map((city) => (
 </input>
 </figure>
 
+<figure>
+<img src="/src/assets/Icons/user.svg" alt="">
+<select>
+<option value="" disabled selected>Traveler - Class</option>
+    <option>1 traveler</option>
+    <option>2 travelers</option>
+</select>
+</input>
+</figure>
+
 
 <div>
 
-<button></button>
+${ButtonGreen("Find trip now")} 
 
 </div>
 

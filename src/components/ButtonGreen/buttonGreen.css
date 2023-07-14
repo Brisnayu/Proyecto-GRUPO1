@@ -1,0 +1,13 @@
+.search-icon {
+    height: 1em;
+    margin-left: 5px;
+}
+
+.green-btn {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 1em;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-family-karla);
+}
