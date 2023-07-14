@@ -1,9 +1,40 @@
+import { BookCard } from "../../components/BookCard/BookCard";
 import "./Hotels.css";
-
-export const Hotels = () => {
-    const main = document.querySelector("main");
-
-    main.innerHTML = `
-        <h1>Estoy en la página de Hotels</h1>
-    `
-};
+// Estos son datos de ejemplo, cuando tengamos el backend los borraremos.
+const mockExampleHotels = [
+    {
+    type: "hotel",
+    city: "Mellia Hotels",
+    description: "ansdjnsakjdnaskjdas",
+    price: "40",
+    img:"./src/assets/img/phuket.png"
+    },
+    {
+    type: "hotel",
+    city: "Lisboa Hotels",
+    description: "ansdjnsakjdnaskjdas",
+    price: "90",
+    img:"./src/assets/img/phuket.png"
+    },
+    {
+    type: "hotel",
+    city: "San francisco Hotels",
+    description: "ansdjnsakjdnaskjdas",
+    price: "30",
+    img:"./src/assets/img/phuket.png"
+    },
+    {
+    type: "hotel",
+    city: "Tokio Hotels",
+    description: "ansdjnsakjdnaskjdas",
+    price: "160",
+    img:"./src/assets/img/phuket.png"
+    },
+    ]
+    export const Hotels = () => {
+        const main = document.querySelector("main");
+        main.innerHTML = ""
+        for (const hotel of mockExampleHotels) {
+        main.innerHTML += BookCard(hotel)
+        }
+    };
