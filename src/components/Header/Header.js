@@ -9,7 +9,7 @@ export const Header = () => {
 <div class="img-container">
 <div class="img"></div>
 <div class="logoandnavbar-container">
-<img src="../public/assets/icon-footer/Phnes-Travels.png" alt="Logo" class="logo">
+<img src="./src/assets/icon-footer/Phnes-Travels.png" alt="Logo" class="logo">
 <div class="navigation-container">
 ${PagesNav}
 ${LoginNav}
