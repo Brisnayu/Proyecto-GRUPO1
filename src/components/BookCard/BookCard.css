@@ -1,0 +1,43 @@
+.container-book {
+    /* position: absolute; */
+    width: 310px;
+    height: 420px;
+    border-radius: 10px;
+    background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.container-text-book {
+    color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    backdrop-filter: blur(3px);
+}
+
+.container-text-book h2 {
+    font-family: var(--font-family-montserrat);
+    font-size: 24px;
+    ;
+}
+
+.container-text-book p {
+    font-family: var(--font-family-karla);
+    font-size: 14px;
+}
+
+.booking-btn {
+    padding: 12px;
+    font-family: var(--font-family-karla);
+    font-size: 16px;
+    color: var(--color-primary);
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+}
