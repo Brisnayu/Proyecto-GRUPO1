@@ -36,13 +36,19 @@ export const Flights = () => {
     
     main.innerHTML = `
     <div class="container-flights">
-        <h3>Destinations</h3>
-        <h2>Discover your love</h2>
-        <button>See all</button>
+
+            <h3>Flights</h3>
+            <h2>Discover your love</h2>
+
+        <button class="booking-btn">See all</button>
+        <div class="flights-container"></div>
     </div>`;
 
+//TODO: crear componente BOTON (booking-btn)
+//TODO: replicar/crear componente para HOTELES
+
     for (const flight of mockExampleFlight) {
-    document.querySelector(".container-flights").innerHTML += BookCard(flight)
+    document.querySelector(".flights-container").innerHTML += BookCard(flight)
     }
     
 };
