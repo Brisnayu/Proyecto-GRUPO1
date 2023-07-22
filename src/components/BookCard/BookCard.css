@@ -1,6 +1,6 @@
 .container-book {
     /* position: absolute; */
-    width: 310px;
+    width: 23%;
     height: 420px;
     border-radius: 10px;
     background-position: center; 
@@ -33,11 +33,11 @@
 }
 
 .booking-btn {
-    padding: 12px;
+    padding: 12px 24px;
     font-family: var(--font-family-karla);
     font-size: 16px;
     color: var(--color-primary);
     font-weight: 500;
     border-radius: 5px;
-    border: none;
+    border: 1px solid var(--color-primary);
 }
