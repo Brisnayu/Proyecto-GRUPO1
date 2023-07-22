@@ -33,9 +33,16 @@ img:"./src/assets/img/phuket.png"
 ]
 export const Flights = () => {
     const main = document.querySelector("main");
-    main.innerHTML = ""
+    
+    main.innerHTML = `
+    <div class="container-flights">
+        <h3>Destinations</h3>
+        <h2>Discover your love</h2>
+        <button>See all</button>
+    </div>`;
+
     for (const flight of mockExampleFlight) {
-    main.innerHTML += BookCard(flight)
+    document.querySelector(".container-flights").innerHTML += BookCard(flight)
     }
     
 };
