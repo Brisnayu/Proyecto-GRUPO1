@@ -5,7 +5,10 @@ import { PagesNav } from '../Navbars/PagesNav';
 import { Title } from '../Title/Title';
 import './Header.css'
 
+
+
 export const Header = () => {
+
     return `
 <div class="img-container">
 <div class="img"></div>
@@ -47,10 +50,12 @@ ${cities.map((city) => (
 </select>
 </figure>
 
-<figure>
-<img src="" alt="">
-<input type="date" id="input-date" >
-</input>
+<figure class="fecha">
+        <label for="fecha" >
+            <img src="./src/assets/Icons/Union.png">
+        </label>
+        <input id="fecha" type="date">
+        <p class="p-date">Elige una fecha</p>
 </figure>
 
 <figure>
@@ -75,4 +80,37 @@ ${ButtonGreen("Find trip now")}
 </div>
 `;
 
+}
+
+export const funciondate = () => {
+    console.log("hola")
+    const p = document.querySelector(".p-date");
+
+    const abrirCalendario = (e) => {
+    
+        e.target.style = "width: 0px";
+        const input = document.querySelector("#fecha");
+        setTimeout(() => {
+            input.style = "width: 110px";
+            input.focus();
+        }, 1000);
+    
+    }
+    
+    p.addEventListener("click", abrirCalendario);
+    
+    
+    const input = document.querySelector("#fecha");
+    
+    const cerrarCalendario = (e) => {
+    
+        e.target.style = "width: 0px";
+        const p = document.querySelector(".p-date");
+        setTimeout(() => {
+            p.style = "width: 110px";
+        }, 1000);
+    
+    }
+    
+    input.addEventListener("blur", cerrarCalendario)
 }
