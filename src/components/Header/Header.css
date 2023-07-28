@@ -162,4 +162,30 @@ header ul li a {color: white;
 }
 
 
+.fecha {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-right: none !important;
+}
 
+.fecha img {
+  width: 16px;
+}
+
+.fecha p {
+  width: 110px;
+  transition: all, 1s;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family:var(--font-family-karla) ;
+  font-size: 15px;
+}
+
+#fecha {
+  width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  border: 0px;
+  transition: all, 1s;
+}

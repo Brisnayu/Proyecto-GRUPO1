@@ -1,10 +1,11 @@
 import "./style.css";
 
 // Constantes
-import { Header } from "./src/components/Header/Header";
+import { Header, funciondate } from "./src/components/Header/Header";
 import Footer from "./src/components/Footer/Footer";
 
 document.querySelector("Header").innerHTML = Header();
+funciondate()
 document.querySelector("Footer").innerHTML = Footer();
 
 // Paginas!
