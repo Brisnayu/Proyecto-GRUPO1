@@ -1,0 +1,30 @@
+.container-cartLayout {
+    margin: 20px;
+    position:relative;
+}
+
+.container-cartLayout>h3 {
+    font-size: 16px;
+    font-family: var(--font-family-karla);
+    color: var(--color-primary);
+}
+
+.container-cartLayout>h2 {
+    font-size: 32px;
+    font-family: var(--font-family-montserrat);
+    color: var(--color-text);
+}
+
+.container-cartLayout> .button-initial {
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+.cartLayout-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}

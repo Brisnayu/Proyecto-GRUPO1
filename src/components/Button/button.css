@@ -1,0 +1,18 @@
+.button-green {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 1em;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-family-karla);
+}
+
+.button-white {
+    padding: 12px 24px;
+    font-family: var(--font-family-karla);
+    font-size: 16px;
+    color: var(--color-primary);
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+}
