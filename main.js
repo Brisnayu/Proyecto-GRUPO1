@@ -21,6 +21,7 @@ import { linkPage } from "./src/utils/linkpage";
 
 Home();
 
+
 // Ejecutando los links
 linkPage("#homelink", Home);
 linkPage("#flightlink", Flights);

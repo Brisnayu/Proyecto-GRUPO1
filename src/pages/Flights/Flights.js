@@ -1,4 +1,5 @@
-import { BookCard } from "../../components/BookCard/BookCard";
+import { ButtonApp } from "../../components/Button/button";
+import { createCards, cardLayout } from "../../components/CardLayout/cardLayout";
 import "./Flights.css";
 // Estos son datos de ejemplo, cuando tengamos el backend los borraremos.
 const mockExampleFlight = [
@@ -33,22 +34,11 @@ img:"./src/assets/img/phuket.png"
 ]
 export const Flights = () => {
     const main = document.querySelector("main");
-    
+
     main.innerHTML = `
-    <div class="container-flights">
+    ${cardLayout("Flights")}
+    `
 
-            <h3>Flights</h3>
-            <h2>Discover your love</h2>
-
-        <button class="booking-btn">See all</button>
-        <div class="flights-container"></div>
-    </div>`;
-
-//TODO: crear componente BOTON (booking-btn)
-//TODO: replicar/crear componente para HOTELES
-
-    for (const flight of mockExampleFlight) {
-    document.querySelector(".flights-container").innerHTML += BookCard(flight)
-    }
+    createCards(mockExampleFlight, "flights");
     
 };

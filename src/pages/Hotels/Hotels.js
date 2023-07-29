@@ -1,4 +1,4 @@
-import { BookCard } from "../../components/BookCard/BookCard";
+import { cardLayout, createCards } from "../../components/CardLayout/cardLayout";
 import "./Hotels.css";
 // Estos son datos de ejemplo, cuando tengamos el backend los borraremos.
 const mockExampleHotels = [
@@ -33,8 +33,10 @@ const mockExampleHotels = [
     ]
     export const Hotels = () => {
         const main = document.querySelector("main");
-        main.innerHTML = ""
-        for (const hotel of mockExampleHotels) {
-        main.innerHTML += BookCard(hotel)
-        }
+
+        main.innerHTML = `
+        ${cardLayout("Hotels")}
+        `
+    
+        createCards(mockExampleHotels, "hotels");
     };
