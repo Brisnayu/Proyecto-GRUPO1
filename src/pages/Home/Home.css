@@ -15,3 +15,9 @@
     font-family: var(--font-family-montserrat);
 }
 
+.category-links {
+    display:flex;
+    gap: 20px;
+    padding: 20px;
+}
+
