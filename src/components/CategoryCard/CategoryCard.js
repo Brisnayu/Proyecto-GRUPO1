@@ -6,7 +6,7 @@ export const CategoryCard = (img, category, description) => {
         <div class="category-text-container">   
             <h2>${category}</h2>
             <p>${description}</p>
-            <button class="category-button"><img src="./src/assets/icons/paper-plane.png"> Show ${category}</img></button>
+            <button id="btn-${category}" class="category-button"><img src="./src/assets/icons/paper-plane.png"> Show ${category}</img></button>
         </div>
     </div>`
 

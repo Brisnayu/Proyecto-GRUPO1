@@ -21,6 +21,10 @@
     text-decoration-color: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 li {
     list-style-type: none;
     cursor: pointer;
@@ -34,4 +38,34 @@ a {
 h1 {
     font-family: var(--font-family-montserrat);
 }
+
+
+.fadeout * {
+    animation: fadeout 0.5s;
+    -webkit-animation: fadeout 0.5s;
+}
+
+.fadein * {
+    animation: fadein 0.5s;
+    -webkit-animation: fadein 0.5s;
+}
+
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
