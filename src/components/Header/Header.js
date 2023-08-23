@@ -114,3 +114,10 @@ export const funciondate = () => {
     
     input.addEventListener("blur", cerrarCalendario)
 }
+
+export const backgroundImage = () => {
+    
+    const imgBackground = document.querySelector(".img")
+
+    // img.style.backgroundImage = nueva imagen
+}
