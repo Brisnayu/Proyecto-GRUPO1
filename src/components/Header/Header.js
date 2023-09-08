@@ -1,4 +1,4 @@
-import { cities } from '../../data/cities';
+import { destinations } from '../../services/destinationsFetch';
 import { ButtonGreen } from '../ButtonGreen/buttonGreen';
 import { LoginNav } from '../Navbars/LoginNav';
 import { PagesNav } from '../Navbars/PagesNav';
@@ -6,8 +6,7 @@ import { Title } from '../Title/Title';
 import './Header.css'
 
 
-
-export const Header = () => {
+    export const Header = () => {
 
     return `
 <div class="img-container">
@@ -27,9 +26,9 @@ ${Title}
 
 <select id="from-select" >
 
-${cities.map((city) => (
-`<option value=${city}>
-${city}
+${destinations.map((city) => (
+`<option value=${city.name}>
+${city.name}
 </option>`
 ))}
 
@@ -42,9 +41,9 @@ ${city}
 <figure>
 <img src="./src/assets/Icons/Vector.svg" alt="">
 <select id="to-select" >
-${cities.map((city) => (
-    `<option value=${city}>
-    ${city}
+${destinations.map((city) => (
+    `<option value=${city.name}>
+    ${city.name}
     </option>`
     ))}
 </select>

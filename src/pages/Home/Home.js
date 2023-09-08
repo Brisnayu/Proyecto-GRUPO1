@@ -1,17 +1,16 @@
 import "./Home.css";
 import PlanTrip from "../../components/PlanTrip/PlanTrip";
 import { Citycard } from "../../components/CityCard/citycard";
-import { fetchDestinations } from "../../utils/destinationsFetch";
 import { CategoryCard } from "../../components/CategoryCard/CategoryCard";
 import { linkPage } from "../../utils/linkpage";
 import { Flights } from "../Flights/Flights";
 import { Hotels } from "../Hotels/Hotels";
+import { destinations } from "../../services/destinationsFetch";
 
 
 export const Home = () => {
-    const main = document.querySelector("main");
-    const destinations = fetchDestinations()
 
+    const main = document.querySelector("main");
 
     main.innerHTML = `
         ${PlanTrip()}
@@ -20,9 +19,16 @@ export const Home = () => {
 
         <div class="love-container">
 
-            ${Citycard("./src/assets/img/santorini.png", "Santorini", "Greece")}
-            ${Citycard("./src/assets/img/phuket.png", "Paris", "Francia")}
-            ${Citycard("./src/assets/img/phuket.png", "Phuket", "Thailand")}
+        
+        ${destinations.map((city) => 
+            
+            (Citycard(city.images[0], city.name, city.country))
+            
+            
+        )   
+    }
+    
+
             </div>
         </div>
         <div class="category-links">
