@@ -12,6 +12,5 @@ export const Citycard = (img, city, title) => {
             </div>
         </div>
     </div>
-
   `;
 };

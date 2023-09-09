@@ -20,12 +20,9 @@ export const Home = () => {
         <div class="love-container">
 
         
-        ${destinations.map((city) => 
-            
+        ${destinations.map((city) =>  
             (Citycard(city.images[0], city.name, city.country))
-            
-            
-        )   
+        ).join("")   
     }
     
 

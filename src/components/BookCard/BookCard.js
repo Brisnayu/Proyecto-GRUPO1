@@ -2,15 +2,18 @@ import { ButtonApp } from "../Button/button";
 import "./BookCard.css";
 
 export const BookCard = (elemento) => {
-  const { img, city, description, price, type } = elemento;
+  const { name, flights, images } = elemento;
+
+  console.log(elemento)
+
   return `
-      <div class="container-book" style="background-image:url(${img})">
+      <div class="container-book" style="background-image:url(${images[0]})">
           <div class="container-text-book">   
             <div>
-              <h2>${city}</h2>
-              <p>${description}</p>
+              <p>Viaja desde ${name}</p>
+              <p>a ${flights[0].arrivalCity}</p>
             </div>
-              <h2>$ ${price}</h2>
+              <h2>$ ${flights[0].price}</h2>
           </div>
           <div class="button-container">
       

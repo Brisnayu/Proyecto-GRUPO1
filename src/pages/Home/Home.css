@@ -1,25 +1,25 @@
 .love-container {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .discover {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .discover > h2 {
-    margin: 0 0 1rem 0.5rem;
-    color: var( --color-text);
-    font-family: var(--font-family-montserrat);
+  margin: 0 0 1rem 0.5rem;
+  color: var(--color-text);
+  font-family: var(--font-family-montserrat);
 }
 
 .category-links {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
 }
-
-

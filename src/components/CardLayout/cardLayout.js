@@ -1,3 +1,4 @@
+import { destinations } from "../../services/destinationsFetch";
 import { BookCard } from "../BookCard/BookCard";
 import { ButtonApp } from "../Button/button";
 import "./cardLayout.css";
@@ -20,7 +21,9 @@ export const createCards = (card, page) => {
 
   for (const element of card) {
     document.querySelector(".cartLayout-container").innerHTML +=
-      BookCard(element);
+     
+      (BookCard(destinations[0]))
+      // Aquí se debe agregar un map, para pintar todo lo del back!!
   }
 
 const containerPadres = document.querySelectorAll('.button-container');
