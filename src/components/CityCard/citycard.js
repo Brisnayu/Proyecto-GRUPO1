@@ -3,7 +3,7 @@ import "./Citycard.css";
 export const Citycard = (img, city, title) => {
   return `
     <div class="container-card">
-        <img src=${img} alt=${title} />
+        <img src="${img}" alt="${title}" />
         <div class="container-text-card">   
             <h2>${city}</h2>
             <div>
