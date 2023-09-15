@@ -36,7 +36,7 @@ export const Flights = () => {
     const main = document.querySelector("main");
 
     main.innerHTML = `
-    ${cardLayout("Flights")}
+${cardLayout("Flights")}
     `
 
     createCards(mockExampleFlight, "flights");

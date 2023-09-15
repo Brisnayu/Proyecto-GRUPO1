@@ -22,8 +22,13 @@ export const createCards = (card, page) => {
   for (const element of card) {
     document.querySelector(".cartLayout-container").innerHTML +=
      
-      (BookCard(destinations[0]))
-      // Aquí se debe agregar un map, para pintar todo lo del back!!
+      // (BookCard(destinations[0]))
+console.log(destinations)
+      destinations.map((city) =>  {
+        console.log(city);
+        (BookCard(city))}).join("") 
+      
+
   }
 
 const containerPadres = document.querySelectorAll('.button-container');
