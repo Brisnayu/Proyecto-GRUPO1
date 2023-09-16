@@ -33,8 +33,8 @@ export const Home = () => {
         ${CategoryCard("./src/assets/img/hotels-category-image.png", "Hotels", "Search our best hotels & places and book for your  amazing trips.")}
         </div>
     `
-    linkPage("#btn-Flights", Flights, document.querySelector("main"));
-    linkPage("#btn-Hotels", Hotels);
+    linkPage("#btnFlights", Flights, document.querySelector("main"));
+    linkPage("#btnHotels", Hotels);
 };
 
 export const fadeout = (element) => {

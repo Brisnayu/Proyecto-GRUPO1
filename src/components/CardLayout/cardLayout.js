@@ -19,17 +19,10 @@ export const cardLayout = (title) => {
 
 export const createCards = (card, page) => {
 
-  for (const element of card) {
     document.querySelector(".cartLayout-container").innerHTML +=
-     
-      // (BookCard(destinations[0]))
-console.log(destinations)
       destinations.map((city) =>  {
-        console.log(city);
-        (BookCard(city))}).join("") 
-      
-
-  }
+        return (BookCard(city))}).join("");
+  
 
 const containerPadres = document.querySelectorAll('.button-container');
 

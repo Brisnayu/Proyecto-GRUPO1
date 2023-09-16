@@ -5,4 +5,6 @@ export const bgImage = {
   discoverlink: "./ImageBackground/Discover.jpg",
   aboutuslink: "./ImageBackground/AboutUs.jpg",
   contactlink: "./ImageBackground/Contact.png",
+  btnFlights: "./ImageBackground/Flight.jpg",
+  btnHotels: "./ImageBackground/Hotels.jpg",
 };
