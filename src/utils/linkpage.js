@@ -26,12 +26,13 @@ export const linkPage = (id, page, element) => {
       navLink.classList.add("active");
     }
 
-    console.log(id);
+    console.log('id', id);
 
       let background = bgImage[id.replace("#", "")];
-      console.log(background);
+      // console.log(background);
     
       imageBackground.style.backgroundImage = `url(${background})`;
+
 
   });
 };

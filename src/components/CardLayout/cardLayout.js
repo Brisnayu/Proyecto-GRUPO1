@@ -21,8 +21,8 @@ export const createCards = (card, page) => {
 
     document.querySelector(".cartLayout-container").innerHTML +=
       destinations.map((city) =>  {
-        return (BookCard(city))}).join("");
-  
+        return (BookCard(city,page))}).join("");      
+
 
 const containerPadres = document.querySelectorAll('.button-container');
 

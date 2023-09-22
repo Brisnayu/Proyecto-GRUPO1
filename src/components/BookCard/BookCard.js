@@ -1,23 +1,27 @@
-import { ButtonApp } from "../Button/button";
 import "./BookCard.css";
 
-export const BookCard = (elemento) => {
+export const BookCard = (elemento, page) => {
   // const { name, flights, images } = elemento;
 
 
-
   return `
-      <div class="container-book" style="background-image:url(${elemento?.images[0]})">
+      <div class="container-book" style="background-image:url(${page === "flights" ? elemento?.images[0]:
+      elemento.hotels[0].images[0]
+    })">
           <div class="container-text-book">   
             <div>
-              <p>Viaja desde ${elemento?.name}</p>
-              <p>a ${elemento.flights.length === 0 ? "INGRESAR DESTINO" : elemento.flights[0].arrivalCity}</p>
+              <p>${page === "flights" ? `Viaja desde ${elemento?.name}` :
+              elemento.hotels[0].name
+  }</p>
+              <p>${page === "flights" ? `a ${elemento.flights[0].arrivalCity}`:
+              elemento?.name
+            }</p>
             </div>
-              <h2>$ ${elemento.flights.length === 0 ? "INGRESAR PRECIO" : elemento.flights[0].price}</h2>
+              <h2>$ ${page === "flights" ? elemento.flights[0].price : elemento.hotels[0].price}</h2>
           </div>
           <div class="button-container">
       
           </div>  
-      </div>
-    `;
+      </div>`
+    ;
 };

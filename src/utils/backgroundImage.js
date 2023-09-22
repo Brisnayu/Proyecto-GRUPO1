@@ -8,3 +8,8 @@ export const bgImage = {
   btnFlights: "./ImageBackground/Flight.jpg",
   btnHotels: "./ImageBackground/Hotels.jpg",
 };
+
+export const bookingElementName = {
+  flightlink: "flights",
+  hotelslink: "hotels",
+};
